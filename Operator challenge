@@ -1,0 +1,67 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package operatorchallenge;
+
+/**
+ *
+ * @author IT RYAN
+ */
+public class OperatorChallenge {
+    int num1 = 69, num2 = 65; 
+    int Sum, difference, product;
+    double quotient;
+    String str1;
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        OperatorChallenge oc = new OperatorChallenge();
+        oc.display();
+        
+    }
+    public void calculate(){
+       
+      Sum = num1 + num2;
+      difference = num1 - num2;
+      product = num1 * num2;
+      quotient = (double)num1/num2;
+      
+      
+      System.out.println("Sum :" + Sum);
+      System.out.println("Difference: " + difference);
+      System.out.println("Product: " + product);
+      String formattedQuotient = String.format("%.2f", quotient);
+      System.out.println("Quotient: " + formattedQuotient);
+      
+    }
+    public void compare(){
+        boolean isJavaFun = true;
+        //                          F                   F   
+        boolean bothEven = (num1 % 2 == 0) && (num2 % 2 == 0);//F
+        //                                  F              F
+        boolean eitherGreaterThan10 = (num1 > 10) || (num2 > 10);//F
+        boolean javaIsFun = isJavaFun;
+        
+      
+      System.out.println("Both num1 and num2 are even: " + bothEven);
+      System.out.println("Either  num1 or num2 is greater than 10: " + eitherGreaterThan10);
+      System.out.println("Is Java fun? " + isJavaFun);
+      
+    }
+    public void concatinate(){
+       String str1 = "Java";
+       
+       String strResult = "Therefore, " +str1 + " is amazing!";
+       System.out.println(strResult);
+    }
+    public void display(){
+        calculate();
+        compare();
+        concatinate();
+    }
+            
+}
