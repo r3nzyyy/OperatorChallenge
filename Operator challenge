@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package operatorchallenge;
 
-/**
- *
- * @author IT RYAN
- */
 public class OperatorChallenge {
     int num1 = 69, num2 = 65; 
     int Sum, difference, product;
